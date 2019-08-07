@@ -34,15 +34,19 @@ window.onload = () => {
           return false;
       }
       event.preventDefault();
-      if (!document.fullscreenElement) {
+      toggleFullscreen();
+     
+   }
+  buttonFullscreen.addEventListener("touchstart", tapHandler);
+  
+  toggleFullscreen = () => {
+     if (!document.fullscreenElement) {
         openFullscreen(document.documentElement);
       }
       else {
         closeFullscreen();
       }
-   }
-  
-  buttonFullscreen..addEventListener("touchstart", tapHandler);
+  }
   
   function openFullscreen(elem) {
     if (elem.requestFullscreen) {
