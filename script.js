@@ -23,14 +23,26 @@ window.onload = () => {
       }, 680);
     }  
   });
-  buttonFullscreen.ondblclick = () => {
-    if (!document.fullscreenElement) {
-      openFullscreen(document.documentElement);
-    }
-    else {
-      closeFullscreen();
-    }
-  }
+  
+ 
+ let tapedTwice = false;
+
+  function tapHandler(event) {
+      if(!tapedTwice) {
+          tapedTwice = true;
+          setTimeout( function() { tapedTwice = false; }, 300 );
+          return false;
+      }
+      event.preventDefault();
+      if (!document.fullscreenElement) {
+        openFullscreen(document.documentElement);
+      }
+      else {
+        closeFullscreen();
+      }
+   }
+  
+  buttonFullscreen..addEventListener("touchstart", tapHandler);
   
   function openFullscreen(elem) {
     if (elem.requestFullscreen) {
