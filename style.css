@@ -79,7 +79,7 @@ html #container .box.back, body #container .box.back {
 }
 html #container .box .word, body #container .box .word {
   color: white;
-  font-size: calc(4vw + 4vh + 2vmin);
+  font-size: calc(2vw + 2vh + 2vmin);
   font-weight: bold;
   width: 100%;
   padding: 1em 0;
