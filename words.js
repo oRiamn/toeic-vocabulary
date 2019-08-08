@@ -38,7 +38,7 @@ near: près de
 next to: à coté de
 by: à, à coté de
 in front of: devant
-behind: derière
+behind: derrière
 between: entre
 under: sous
 below: en dessous, sous
