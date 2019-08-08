@@ -25,7 +25,7 @@ business: affaire
 cleaning: nettoyer
 get on: monter dans
 get off: descendre de
-wipe off : enlever
+wipe off: enlever
 run up: monter en courant
 walk down: descendre à pied
 put away: ranger
@@ -54,12 +54,75 @@ scattered: éparpillé
 lined up: aligné
 hung: accroché (sur / à)
 laid out: disposé
-placed on:  placé sur
+placed on: placé sur
 gathered: rassemblé
 lying on: posé sur
 set in the top of: placé au-dessus de
 surrounded by: entouré de
 leanning against: posé contre
+office: bureau (pièce)
+desk: bureau (meuble)
+drawer: tiroir
+chair: chaise
+shelves: étagères
+filing cabinet: classeur (meuble)
+laptop: ordinateur portable
+monitor: écran, moniteur
+screen: écran
+keyboard: clavier
+mouse: souris
+headphones: casque audio
+clock: horloge
+lamp: lampe
+photocopier: photocopieur
+tray: plateau
+binder: classeur
+notepad: bloc-notes
+tape: ruban adhésif
+magnet: aimant
+folder: dossier
+pictures: images, photos
+patron: client
+diner: dineur, convives
+server: serveur
+waiter: serveur
+waitress: serveuse
+apron: tablier
+plate: assiette
+bowl: bol
+tablecloth: nappe
+place setting: le couvert
+cutlery: les couverts
+glass: verre
+paper napkin: serviette en papier
+freezer: congélateur
+food: nourriture
+beverage: boisson
+cutting board: planche à découper
+cookware: ustensiles de cuisine
+counter: comptoir
+board member: membre du conseil d’administration
+CEO (chief executive officer): PDG
+CFO (chief financial officer): directeur financier
+Human Ressources Director: DRH
+Head of department: chef de service
+office manager: responsable administratif
+floor manager: chef de magasin
+account manager: chargé de clientèle
+maintenance crew: équipe de maintenance
+IT technician: informaticien
+PA (personal assistant): assistant de direction
+clerk: employé de bureau
+clerical worker: employé de bureau
+executive: cadre (poste)
+job seeker: demandeur d’emploi
+contractor: prestataire
+intern: stagiaire
+temp: intérimaire
+security guard: agent de sécurité
+sales rep: commercial
+salesperson: commercial
+graphic designer: graphiste
 `.split("\n")).reduce((acc, curr) => {
 	const [english, french] = curr.split(':');
 	if(english && french){
