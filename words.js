@@ -157,33 +157,73 @@ overall : total
 coworker : collègue
 staff representative : délégué du personnel
 high hopes : grand espoirs
-trial period : période d’essai
-full-time : à plein temps
-part-time : à temps partiel
-pay slip : bulletin de paie
-salary : salaire
-hourly wage : salaire horaire
-overtime : heures supplémentaires
-raise : augmenter, augmentation
-incentive : motivation
-benefits : avantages
-perks : avantages en nature
-volunteer : bénévole
-freelance : a son compte
-agreement : accord
-amendment : avenant
-party : partie
-binding : qui lie
-hereunder : ci-dessous
-whereby : selon lequel, par lequel
-abide by : respecter
-be eligible : avoir droit
-unemployement : chômage
-however : cependant
-duration : durée 
-stipulate : stipuler
-grievance : doléance
-complaint : plainte
+trial period : période d’essai
+full-time : à plein temps
+part-time : à temps partiel
+pay slip : bulletin de paie
+salary : salaire
+hourly wage : salaire horaire
+overtime : heures supplémentaires
+raise : augmenter, augmentation
+incentive : motivation
+benefits : avantages
+perks : avantages en nature
+volunteer : bénévole
+freelance : à son compte
+agreement : accord
+amendment : avenant
+party : partie
+binding : qui lie
+hereunder : ci-dessous
+whereby : selon lequel, par lequel
+abide by : respecter
+be eligible : avoir droit
+unemployement : chômage
+however : cependant
+duration : durée 
+stipulate : stipuler
+grievance : doléance
+complaint : plainte
+schedule (n,v) : planning, planifier
+agenda : ordre du jour
+(the) minutes : compte-rendu
+flip chart : paper-board
+outing : sortie
+attendee : participant
+fundraiser : collecte de fond
+retirement : retraite
+hold : organiser (reunion)
+take place : avoir lieu
+lead : mener
+postpone : reporter
+delighted : ravi
+look forward to : attendre avec impatience
+workshop : atelier
+despite : malgré
+fortnight : quinze jours
+store, outlet : magasin, point de vente
+mall : centre commercial
+store associate : employé de magasin
+cashier : caissier, caissière
+shelf stocker : employé qui remplit le rayon
+loyalty : confiance, fidélité
+aisle : allée
+cart : chariot
+checkout caisse
+cash register : caisse
+receipt : ticket de caisse
+change : monnaie
+coupon : bon de réduction
+markdown : réduction
+sale : promotion
+sales : soldes
+appliance : appareil électroménagers
+dairy products : produits laitiers
+produce : fruit et légumes
+browsing : à chercher
+embarrassed : gêné
+replenish : remplir
+issue :  problème
 `.split("\n")).reduce((acc, curr) => {
 	const [english, french] = curr.split(' : ');
 	if(english && french){
