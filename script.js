@@ -152,8 +152,8 @@ window.onload = () => {
     });
 
     swipeEvent(document, {
-        onRight: nexWord,
-        onLeft: prevWord
+        onRight: prevWord,
+        onLeft: nexWord
     })
     container.querySelectorAll(".box").forEach(e => e.addEventListener("click", flipCard));
     doubleTap(buttonFullscreen, toggleFullscreen);
