@@ -79,37 +79,6 @@ window.onload = () => {
 
             }
         },
-        toggleFullscreen = () => {
-            function openFullscreen(elem) {
-                if (elem.requestFullscreen) {
-                    elem.requestFullscreen();
-                } else if (elem.mozRequestFullScreen) { /* Firefox */
-                    elem.mozRequestFullScreen();
-                } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-                    elem.webkitRequestFullscreen();
-                } else if (elem.msRequestFullscreen) { /* IE/Edge */
-                    elem.msRequestFullscreen();
-                }
-            }
-            function closeFullscreen() {
-                if (document.exitFullscreen) {
-                    document.exitFullscreen();
-                } else if (document.mozCancelFullScreen) { /* Firefox */
-                    document.mozCancelFullScreen();
-                } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
-                    document.webkitExitFullscreen();
-                } else if (document.msExitFullscreen) { /* IE/Edge */
-                    document.msExitFullscreen();
-                }
-            }
-
-            if (!document.fullscreenElement) {
-                openFullscreen(document.documentElement);
-            }
-            else {
-                closeFullscreen();
-            }
-        },
         flipCard = () => {
             if (!container.classList.contains('active')) {
                 container.classList.toggle('active');
@@ -156,5 +125,4 @@ window.onload = () => {
         onLeft: nexWord
     })
     container.querySelectorAll(".box").forEach(e => e.addEventListener("click", flipCard));
-    doubleTap(buttonFullscreen, toggleFullscreen);
 }
